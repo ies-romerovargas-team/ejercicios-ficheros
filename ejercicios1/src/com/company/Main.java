@@ -24,23 +24,21 @@ public class Main {
             try{
                 System.out.print("Eliga opción: ");
                 opcion = sc.nextInt();
+                sc.nextLine();   // limpiar buffer
                 switch (opcion) {
                     case 1:
                         //escribeFicheroNumRandom10
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero: ");
                         a = sc.nextLine();
                         escribeFicheroNumRandom10(a + ".txt");
                         break;
                     case 2:
                         //sumaFicheroInt10
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero: ");
                         a = sc.nextLine();
                         sumaFicheroInt10(a + ".txt");
                     case 3:
                         //escribeFicheroNumRandom
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero: ");
                         a = sc.nextLine();
                         System.out.print("¿Cuantos enteros?: ");
@@ -49,28 +47,24 @@ public class Main {
                         break;
                     case 4:
                         //sumaFicheroInt
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero: ");
                         a = sc.nextLine();
                         sumaFicheroInt(a + ".txt");
                         break;
                     case 5:
                         //escribeFicheroTexto
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero: ");
                         a = sc.nextLine();
                         escribeFicheroTexto(a + ".txt");
                         break;
                     case 6:
                         //leeFicheroTexto
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero: ");
                         a = sc.nextLine();
                         leeFicheroTexto(a + ".txt");
                         break;
                     case 7:
                         //copiaFicheroTexto
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero para copiar: ");
                         a = sc.nextLine();
                         System.out.print("Introduce un nombre de destino: ");
@@ -79,7 +73,6 @@ public class Main {
                         break;
                     case 8:
                         //invierteLineasFichero
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero para copiar: ");
                         a = sc.nextLine();
                         System.out.print("Introduce un nombre de destino: ");
@@ -88,7 +81,6 @@ public class Main {
                         break;
                     case 9:
                         //invierteFicheroTexto
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero para copiar: ");
                         a = sc.nextLine();
                         System.out.print("Introduce un nombre de destino: ");
@@ -97,7 +89,6 @@ public class Main {
                         break;
                     case 10:
                         //separaPalabrasFichero
-                        a = sc.nextLine();   // limpiar buffer
                         System.out.print("Introduce nombre de fichero con frases: ");
                         a = sc.nextLine();
                         System.out.print("Introduce un nombre de destino: ");

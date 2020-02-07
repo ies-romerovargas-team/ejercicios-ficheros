@@ -88,8 +88,7 @@ public class Main {
         }
     }
 
-    private static void clasificaFicheros()
-    {
+    private static void clasificaFicheros() {
         Map<String, Integer> ficheros = new HashMap<>();
         File dir = new File("."); // "." = directorio actual
         File[] arrayFicheros = dir.listFiles();
@@ -98,33 +97,27 @@ public class Main {
             if (arrayFicheros[i].isFile()) {
                 // hallamos extensión
                 String ext = extension(arrayFicheros[i].getName());
-                System.out.println(ext);
-                /*if(cadena.contains(arrayTexto[i])){
-                    if(palabras.containsKey(arrayTexto[i]))
-                    {
-                        palabras.put(arrayTexto[i], palabras.get(arrayTexto[i]) + 1);
-                    }
-                    else
-                    {
-                        palabras.put(arrayTexto[i], 1);
-                    }
-                }*/
+                if (ficheros.containsKey(ext)) {
+                    ficheros.put(ext, ficheros.get(ext) + 1);
+                } else {
+                    ficheros.put(ext, 1);
+                }
+
             }
         }
+        System.out.println(ficheros);
     }
 
     private static String extension(String name) {
         int punto = name.lastIndexOf('.');
-        if(punto != -1) {
+        if (punto != -1) {
             return name.substring(punto + 1);
-        } else
-            {
+        } else {
             return "";
         }
     }
 
-    private static String ficheroMasGrande()
-    {
+    private static String ficheroMasGrande() {
         String maslargo = "";
         File dir = new File("."); // "." = directorio actual
         File[] arrayFicheros = dir.listFiles();
@@ -133,8 +126,7 @@ public class Main {
 
         for (i = 0; i < arrayFicheros.length; i++) {
             if (arrayFicheros[i].isFile()) {
-                if (arrayFicheros[i].length() > mayor)
-                {
+                if (arrayFicheros[i].length() > mayor) {
                     mayor = arrayFicheros[i].length();
                     maslargo = arrayFicheros[i].getName();
                 }
@@ -238,24 +230,6 @@ public class Main {
         return cont;
     }
 
-    private static List<String> _dir(String path) {
-        List<String> lista = new ArrayList<>();
-        // Obtener el listado de un directorio
-        File dir = new File("."); // "." = directorio actual
-        File[] arrayFicheros = dir.listFiles();
-        int i;
-
-        for (i = 0; i < arrayFicheros.length; i++) {
-            if (arrayFicheros[i].isFile()) {
-                if (arrayFicheros[i].getName().endsWith(".txt")) {
-                    System.out.println(arrayFicheros[i].getName());
-                    //System.out.println(arrayFicheros[i].getAbsolutePath());
-                }
-            }
-        }
-        return lista;
-    }
-
     public static void imprimeMenu(String[] opciones, String titulo, String color) {
         System.out.println(color + "╔══════════════════════════════════╗");
         System.out.println("║              M E N U             ║");
@@ -282,69 +256,5 @@ public class Main {
         System.out.println("║ " + ANSI_RESET + "0. Salir                         " + color + "║");
         //System.out.println("\u001B[0m");
         System.out.println("╚══════════════════════════════════╝" + ANSI_RESET);
-    }
-
-    public static void explicacionesClase() {
-        // Para ver si un fichero existe
-
-        // Método antiguo: File
-        // File nos permite obtener información sobre el fichero que le digamos
-        // El fichero no tiene ni siquiera por qué existir
-
-        File fich = new File("C:\\UkLog.dat");
-        if (fich.exists()) {
-            if (fich.isFile()) {
-                System.out.println("El fichero existe");
-            } else {
-                if (fich.isDirectory()) {
-                    System.out.println("Es un directorio realmente");
-                }
-            }
-        } else {
-            System.out.println("El fichero no existe");
-        }
-
-        // Método moderno: Files
-        if (Files.exists(Path.of("fichero.txt"))) {
-            if (Files.isRegularFile(Path.of("fichero.txt"))) {
-                System.out.println("Método nuevo: EXISTE");
-            } else {
-                if (Files.isDirectory(Path.of("fichero.txt"))) {
-                    System.out.println("Método nuevo: DIRECTORIO");
-                }
-            }
-        }
-
-        // Operaciones con ficheros: borrar, copiar, mover/renombrar
-        // Versión antigua
-        fich.delete();
-        File fich2 = new File("fichero2.txt");
-        fich.renameTo(fich2);
-
-        // Versión moderna
-        try {
-            Files.delete(Path.of("fichero.txt"));
-            Files.copy(Path.of("fichero.txt"), Path.of("C:\\fichero2.txt"));
-            Files.move(Path.of("fichero.txt"), Path.of("fichero2.txt"));
-
-            Files.createDirectories(Path.of("carpeta"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        // Obtener el listado de un directorio
-        File dir = new File("."); // "." = directorio actual
-        File[] arrayFicheros = dir.listFiles();
-        int i;
-
-        for (i = 0; i < arrayFicheros.length; i++) {
-            if (arrayFicheros[i].isFile()) {
-                if (arrayFicheros[i].getName().endsWith(".txt")) {
-                    System.out.println(arrayFicheros[i].getName());
-                    //System.out.println(arrayFicheros[i].getAbsolutePath());
-                }
-            }
-        }
     }
 }
