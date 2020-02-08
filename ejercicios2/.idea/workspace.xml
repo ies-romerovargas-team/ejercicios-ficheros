@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d8c823-cb00-4a60-b8c9-d3d71a30710d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ejercicios1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ejercicios3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ejercicios4/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ejercicios1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicios1/out/production/ejercicios1/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios1/out/production/ejercicios1/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicios1/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios1/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ejercicios2/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ejercicios2/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ejercicios3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicios3/FicheroAlumnos.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios3/FicheroAlumnos.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicios3/out/production/ejercicios3/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios3/out/production/ejercicios3/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicios3/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios3/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ejercicios4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicios4/out/production/ejercicios4/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios4/out/production/ejercicios4/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ejercicios4/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ejercicios4/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
